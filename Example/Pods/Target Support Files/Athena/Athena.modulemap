@@ -1,0 +1,6 @@
+framework module Athena {
+  umbrella header "Athena-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - Athena (0.1.0)
+
+DEPENDENCIES:
+  - Athena (from `../`)
+
+EXTERNAL SOURCES:
+  Athena:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Athena: 21c4b0b12b44d70228042f50d94082e5446dddd2
+
+PODFILE CHECKSUM: 9a372aa91a2d7a5dac8d792f34ff6e28e36c499c
+
+COCOAPODS: 1.6.1
