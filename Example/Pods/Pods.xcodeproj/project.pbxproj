@@ -7,12 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A63934CB709111CF2549F599BCAE0F6 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E438792ADD8A464DE3B83310CFA53786 /* ReplaceMe.swift */; };
 		78228ECBD44DF6A64103D8DB7224BD2C /* Pods-Athena_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F2E9C826161AB46A087ACBD2126F0F /* Pods-Athena_Tests-dummy.m */; };
 		842F342E50ED7EFD1B8EE8AE058AF011 /* Athena-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86E88E7970235F0648E0FC028E88D8AE /* Athena-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9421CF4317D77B5FACC9D23F2FA404CD /* Athena-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CB156D76E70F7B6C2ADDD31F65D988 /* Athena-dummy.m */; };
 		AA727236EC902B3F7F4C6883EBE5F183 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		B98A3113C60525FA21D0869188881843 /* Pods-Athena_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECE947A33160867FAE6D2627809CF955 /* Pods-Athena_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE0B2E5222F930FB00001AE7 /* CGPoint+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0B2E5122F930FB00001AE7 /* CGPoint+Initializers.swift */; };
+		BE0B2E5422F931AA00001AE7 /* CGPoint+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0B2E5322F931AA00001AE7 /* CGPoint+Size.swift */; };
+		BE0B2E5622F9325800001AE7 /* CGPoint+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0B2E5522F9325800001AE7 /* CGPoint+String.swift */; };
+		BE0B2E5822F9C30700001AE7 /* CGPoint+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0B2E5722F9C30700001AE7 /* CGPoint+Rounding.swift */; };
+		BE0E9A3C225070C9009F7052 /* EdgeInsets+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0E9A36225070C8009F7052 /* EdgeInsets+Addition.swift */; };
+		BE0E9A3E225070C9009F7052 /* EdgeInsets+Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0E9A38225070C8009F7052 /* EdgeInsets+Division.swift */; };
+		BE0E9A3F225070C9009F7052 /* EdgeInsets+Multiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0E9A39225070C8009F7052 /* EdgeInsets+Multiplication.swift */; };
+		BE0E9A40225070C9009F7052 /* EdgeInsets+Subtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0E9A3A225070C8009F7052 /* EdgeInsets+Subtraction.swift */; };
+		BE0E9A41225070C9009F7052 /* EdgeInsets+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0E9A3B225070C8009F7052 /* EdgeInsets+Initializers.swift */; };
+		BE1E7288224F19BA0035072D /* FloatingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E7282224F19BA0035072D /* FloatingPoint.swift */; };
+		BE1E72C322505FC60035072D /* FloatingPoint+Equality.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72C222505FC60035072D /* FloatingPoint+Equality.swift */; };
+		BE1E72C5225060170035072D /* FloatingPoint+Angles.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72C4225060170035072D /* FloatingPoint+Angles.swift */; };
+		BE1E72E4225062AF0035072D /* RectEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72C7225062AF0035072D /* RectEdges.swift */; };
+		BE1E72E8225062AF0035072D /* CGSize+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72CC225062AF0035072D /* CGSize+Initializers.swift */; };
+		BE1E72E9225062AF0035072D /* CGSize+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72CD225062AF0035072D /* CGSize+Scale.swift */; };
+		BE1E72EA225062AF0035072D /* CGSize+Inset.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72CE225062AF0035072D /* CGSize+Inset.swift */; };
+		BE1E72EB225062AF0035072D /* CGSize+Comparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72CF225062AF0035072D /* CGSize+Comparison.swift */; };
+		BE1E72ED225062AF0035072D /* CGSize+MinMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72D1225062AF0035072D /* CGSize+MinMax.swift */; };
+		BE1E72EE225062AF0035072D /* CGSize+RatioHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72D2225062AF0035072D /* CGSize+RatioHelpers.swift */; };
+		BE1E72EF225062AF0035072D /* CGSize+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72D3225062AF0035072D /* CGSize+Math.swift */; };
+		BE1E72F0225062AF0035072D /* CGSize+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72D4225062AF0035072D /* CGSize+Orientation.swift */; };
+		BE1E72F2225062AF0035072D /* CGPoint+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72D7225062AF0035072D /* CGPoint+Helpers.swift */; };
+		BE1E72F3225062AF0035072D /* CGPoint+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72D8225062AF0035072D /* CGPoint+Math.swift */; };
+		BE1E72F4225062AF0035072D /* CGPoint+MinMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72D9225062AF0035072D /* CGPoint+MinMax.swift */; };
+		BE1E72F5225062AF0035072D /* NumberFormatter+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72DA225062AF0035072D /* NumberFormatter+Size.swift */; };
+		BE1E72F7225062AF0035072D /* RectCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72DC225062AF0035072D /* RectCorners.swift */; };
+		BE1E72F8225062AF0035072D /* CGRect+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72DE225062AF0035072D /* CGRect+Math.swift */; };
+		BE1E72F9225062AF0035072D /* CGRect+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72DF225062AF0035072D /* CGRect+Convenience.swift */; };
+		BE1E72FA225062AF0035072D /* CGRect+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72E0225062AF0035072D /* CGRect+Scale.swift */; };
+		BE1E72FB225062AF0035072D /* CGRect+Various.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72E1225062AF0035072D /* CGRect+Various.swift */; };
+		BE1E72FC225062AF0035072D /* CGRect+InsetOutset.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72E2225062AF0035072D /* CGRect+InsetOutset.swift */; };
+		BE1E72FD225062AF0035072D /* GeomertyExtensionKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72E3225062AF0035072D /* GeomertyExtensionKeys.swift */; };
+		BE9342F42320BBCF00C2AD8E /* CGRect+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9342F32320BBCF00C2AD8E /* CGRect+Initializers.swift */; };
+		BE93A29D22768AE300220CD9 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE93A29C22768AE300220CD9 /* Orientation.swift */; };
+		BEAF598A2251C29F00CC01F1 /* CGSize+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF59892251C29F00CC01F1 /* CGSize+String.swift */; };
+		BEAF598C2251C2DD00CC01F1 /* CGSize+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF598B2251C2DD00CC01F1 /* CGSize+Rounding.swift */; };
+		BEAF598E2251C33E00CC01F1 /* CGSize+Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF598D2251C33E00CC01F1 /* CGSize+Point.swift */; };
+		BEAF59902251C51B00CC01F1 /* CGSize+Outset.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF598F2251C51B00CC01F1 /* CGSize+Outset.swift */; };
 		FC8E4A8B3B37DD0F3ACCA74554FD57D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,11 +79,48 @@
 		A383FB170B849D3D62217C1CB32C8B01 /* Pods-Athena_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Athena_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A5CB156D76E70F7B6C2ADDD31F65D988 /* Athena-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Athena-dummy.m"; sourceTree = "<group>"; };
 		B641834256EA041E8B7838A67C12232D /* Pods-Athena_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Athena_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE0B2E5122F930FB00001AE7 /* CGPoint+Initializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Initializers.swift"; sourceTree = "<group>"; };
+		BE0B2E5322F931AA00001AE7 /* CGPoint+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Size.swift"; sourceTree = "<group>"; };
+		BE0B2E5522F9325800001AE7 /* CGPoint+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+String.swift"; sourceTree = "<group>"; };
+		BE0B2E5722F9C30700001AE7 /* CGPoint+Rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Rounding.swift"; sourceTree = "<group>"; };
+		BE0E9A36225070C8009F7052 /* EdgeInsets+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Addition.swift"; sourceTree = "<group>"; };
+		BE0E9A38225070C8009F7052 /* EdgeInsets+Division.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Division.swift"; sourceTree = "<group>"; };
+		BE0E9A39225070C8009F7052 /* EdgeInsets+Multiplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Multiplication.swift"; sourceTree = "<group>"; };
+		BE0E9A3A225070C8009F7052 /* EdgeInsets+Subtraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Subtraction.swift"; sourceTree = "<group>"; };
+		BE0E9A3B225070C8009F7052 /* EdgeInsets+Initializers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Initializers.swift"; sourceTree = "<group>"; };
+		BE1E7282224F19BA0035072D /* FloatingPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingPoint.swift; sourceTree = "<group>"; };
+		BE1E72C222505FC60035072D /* FloatingPoint+Equality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Equality.swift"; sourceTree = "<group>"; };
+		BE1E72C4225060170035072D /* FloatingPoint+Angles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Angles.swift"; sourceTree = "<group>"; };
+		BE1E72C7225062AF0035072D /* RectEdges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectEdges.swift; sourceTree = "<group>"; };
+		BE1E72CC225062AF0035072D /* CGSize+Initializers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Initializers.swift"; sourceTree = "<group>"; };
+		BE1E72CD225062AF0035072D /* CGSize+Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Scale.swift"; sourceTree = "<group>"; };
+		BE1E72CE225062AF0035072D /* CGSize+Inset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Inset.swift"; sourceTree = "<group>"; };
+		BE1E72CF225062AF0035072D /* CGSize+Comparison.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Comparison.swift"; sourceTree = "<group>"; };
+		BE1E72D1225062AF0035072D /* CGSize+MinMax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+MinMax.swift"; sourceTree = "<group>"; };
+		BE1E72D2225062AF0035072D /* CGSize+RatioHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+RatioHelpers.swift"; sourceTree = "<group>"; };
+		BE1E72D3225062AF0035072D /* CGSize+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Math.swift"; sourceTree = "<group>"; };
+		BE1E72D4225062AF0035072D /* CGSize+Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Orientation.swift"; sourceTree = "<group>"; };
+		BE1E72D7225062AF0035072D /* CGPoint+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Helpers.swift"; sourceTree = "<group>"; };
+		BE1E72D8225062AF0035072D /* CGPoint+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Math.swift"; sourceTree = "<group>"; };
+		BE1E72D9225062AF0035072D /* CGPoint+MinMax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+MinMax.swift"; sourceTree = "<group>"; };
+		BE1E72DA225062AF0035072D /* NumberFormatter+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Size.swift"; sourceTree = "<group>"; };
+		BE1E72DC225062AF0035072D /* RectCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectCorners.swift; sourceTree = "<group>"; };
+		BE1E72DE225062AF0035072D /* CGRect+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Math.swift"; sourceTree = "<group>"; };
+		BE1E72DF225062AF0035072D /* CGRect+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Convenience.swift"; sourceTree = "<group>"; };
+		BE1E72E0225062AF0035072D /* CGRect+Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Scale.swift"; sourceTree = "<group>"; };
+		BE1E72E1225062AF0035072D /* CGRect+Various.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Various.swift"; sourceTree = "<group>"; };
+		BE1E72E2225062AF0035072D /* CGRect+InsetOutset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+InsetOutset.swift"; sourceTree = "<group>"; };
+		BE1E72E3225062AF0035072D /* GeomertyExtensionKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeomertyExtensionKeys.swift; sourceTree = "<group>"; };
+		BE9342F32320BBCF00C2AD8E /* CGRect+Initializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Initializers.swift"; sourceTree = "<group>"; };
+		BE93A29C22768AE300220CD9 /* Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Orientation.swift; path = Athena/Classes/Orientation.swift; sourceTree = "<group>"; };
+		BEAF59892251C29F00CC01F1 /* CGSize+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+String.swift"; sourceTree = "<group>"; };
+		BEAF598B2251C2DD00CC01F1 /* CGSize+Rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Rounding.swift"; sourceTree = "<group>"; };
+		BEAF598D2251C33E00CC01F1 /* CGSize+Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Point.swift"; sourceTree = "<group>"; };
+		BEAF598F2251C51B00CC01F1 /* CGSize+Outset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Outset.swift"; sourceTree = "<group>"; };
 		BFD2369EA3659D276E29BB7470B91487 /* Athena.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Athena.modulemap; sourceTree = "<group>"; };
 		C9B83FA2319AF150DDCEFA632D8B3FDE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E3C5E0326BABD0E687642BE9AF0D2FA1 /* Pods-Athena_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Athena_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		E438792ADD8A464DE3B83310CFA53786 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = Athena/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		E79D369EE3D85A753D8451A92338D865 /* Athena-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Athena-prefix.pch"; sourceTree = "<group>"; };
 		EAB2A16BB06F800119C53264D9676CCC /* Pods-Athena_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Athena_Tests-Info.plist"; sourceTree = "<group>"; };
 		ECE947A33160867FAE6D2627809CF955 /* Pods-Athena_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Athena_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -105,6 +179,91 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		BE0E9A35225070C8009F7052 /* EdgeInsets */ = {
+			isa = PBXGroup;
+			children = (
+				BE0E9A3B225070C8009F7052 /* EdgeInsets+Initializers.swift */,
+				BE0E9A36225070C8009F7052 /* EdgeInsets+Addition.swift */,
+				BE0E9A3A225070C8009F7052 /* EdgeInsets+Subtraction.swift */,
+				BE0E9A39225070C8009F7052 /* EdgeInsets+Multiplication.swift */,
+				BE0E9A38225070C8009F7052 /* EdgeInsets+Division.swift */,
+			);
+			path = EdgeInsets;
+			sourceTree = "<group>";
+		};
+		BE1E7281224F19BA0035072D /* FloatingPoint */ = {
+			isa = PBXGroup;
+			children = (
+				BE1E7282224F19BA0035072D /* FloatingPoint.swift */,
+				BE1E72C4225060170035072D /* FloatingPoint+Angles.swift */,
+				BE1E72C222505FC60035072D /* FloatingPoint+Equality.swift */,
+			);
+			name = FloatingPoint;
+			path = Athena/Classes/FloatingPoint;
+			sourceTree = "<group>";
+		};
+		BE1E72C6225062AF0035072D /* Core Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				BE0E9A35225070C8009F7052 /* EdgeInsets */,
+				BE1E72D6225062AF0035072D /* CGPoint */,
+				BE1E72CB225062AF0035072D /* CGSize */,
+				BE1E72DD225062AF0035072D /* CGRect */,
+				BE1E72C7225062AF0035072D /* RectEdges.swift */,
+				BE1E72DA225062AF0035072D /* NumberFormatter+Size.swift */,
+				BE1E72DC225062AF0035072D /* RectCorners.swift */,
+				BE1E72E3225062AF0035072D /* GeomertyExtensionKeys.swift */,
+			);
+			name = "Core Graphics";
+			path = "Athena/Classes/Core Graphics";
+			sourceTree = "<group>";
+		};
+		BE1E72CB225062AF0035072D /* CGSize */ = {
+			isa = PBXGroup;
+			children = (
+				BE1E72CC225062AF0035072D /* CGSize+Initializers.swift */,
+				BEAF598D2251C33E00CC01F1 /* CGSize+Point.swift */,
+				BEAF59892251C29F00CC01F1 /* CGSize+String.swift */,
+				BEAF598B2251C2DD00CC01F1 /* CGSize+Rounding.swift */,
+				BE1E72CD225062AF0035072D /* CGSize+Scale.swift */,
+				BE1E72CE225062AF0035072D /* CGSize+Inset.swift */,
+				BEAF598F2251C51B00CC01F1 /* CGSize+Outset.swift */,
+				BE1E72CF225062AF0035072D /* CGSize+Comparison.swift */,
+				BE1E72D1225062AF0035072D /* CGSize+MinMax.swift */,
+				BE1E72D2225062AF0035072D /* CGSize+RatioHelpers.swift */,
+				BE1E72D3225062AF0035072D /* CGSize+Math.swift */,
+				BE1E72D4225062AF0035072D /* CGSize+Orientation.swift */,
+			);
+			path = CGSize;
+			sourceTree = "<group>";
+		};
+		BE1E72D6225062AF0035072D /* CGPoint */ = {
+			isa = PBXGroup;
+			children = (
+				BE0B2E5122F930FB00001AE7 /* CGPoint+Initializers.swift */,
+				BE0B2E5322F931AA00001AE7 /* CGPoint+Size.swift */,
+				BE1E72D7225062AF0035072D /* CGPoint+Helpers.swift */,
+				BE0B2E5522F9325800001AE7 /* CGPoint+String.swift */,
+				BE0B2E5722F9C30700001AE7 /* CGPoint+Rounding.swift */,
+				BE1E72D8225062AF0035072D /* CGPoint+Math.swift */,
+				BE1E72D9225062AF0035072D /* CGPoint+MinMax.swift */,
+			);
+			path = CGPoint;
+			sourceTree = "<group>";
+		};
+		BE1E72DD225062AF0035072D /* CGRect */ = {
+			isa = PBXGroup;
+			children = (
+				BE9342F32320BBCF00C2AD8E /* CGRect+Initializers.swift */,
+				BE1E72DE225062AF0035072D /* CGRect+Math.swift */,
+				BE1E72DF225062AF0035072D /* CGRect+Convenience.swift */,
+				BE1E72E0225062AF0035072D /* CGRect+Scale.swift */,
+				BE1E72E1225062AF0035072D /* CGRect+Various.swift */,
+				BE1E72E2225062AF0035072D /* CGRect+InsetOutset.swift */,
+			);
+			path = CGRect;
+			sourceTree = "<group>";
+		};
 		C2040E78E908F0DCF5D47711956D0873 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +296,9 @@
 		E646760E97BE820DE5F8BD05851B6375 /* Athena */ = {
 			isa = PBXGroup;
 			children = (
-				E438792ADD8A464DE3B83310CFA53786 /* ReplaceMe.swift */,
+				BE93A29C22768AE300220CD9 /* Orientation.swift */,
+				BE1E72C6225062AF0035072D /* Core Graphics */,
+				BE1E7281224F19BA0035072D /* FloatingPoint */,
 				C2040E78E908F0DCF5D47711956D0873 /* Pod */,
 				E6F9F6259E03B363A780731234A4DE4F /* Support Files */,
 			);
@@ -242,7 +403,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -293,8 +454,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE1E72F4225062AF0035072D /* CGPoint+MinMax.swift in Sources */,
+				BE1E72F5225062AF0035072D /* NumberFormatter+Size.swift in Sources */,
+				BE0E9A3F225070C9009F7052 /* EdgeInsets+Multiplication.swift in Sources */,
+				BE1E72E9225062AF0035072D /* CGSize+Scale.swift in Sources */,
+				BE0E9A41225070C9009F7052 /* EdgeInsets+Initializers.swift in Sources */,
+				BE1E72EB225062AF0035072D /* CGSize+Comparison.swift in Sources */,
+				BE0E9A3E225070C9009F7052 /* EdgeInsets+Division.swift in Sources */,
+				BE1E72EA225062AF0035072D /* CGSize+Inset.swift in Sources */,
+				BEAF598E2251C33E00CC01F1 /* CGSize+Point.swift in Sources */,
+				BE1E72F2225062AF0035072D /* CGPoint+Helpers.swift in Sources */,
+				BE1E72EE225062AF0035072D /* CGSize+RatioHelpers.swift in Sources */,
+				BE1E72ED225062AF0035072D /* CGSize+MinMax.swift in Sources */,
+				BE1E72E8225062AF0035072D /* CGSize+Initializers.swift in Sources */,
+				BE0E9A40225070C9009F7052 /* EdgeInsets+Subtraction.swift in Sources */,
+				BE1E72FB225062AF0035072D /* CGRect+Various.swift in Sources */,
+				BE1E72FA225062AF0035072D /* CGRect+Scale.swift in Sources */,
+				BE1E72EF225062AF0035072D /* CGSize+Math.swift in Sources */,
+				BE1E72FC225062AF0035072D /* CGRect+InsetOutset.swift in Sources */,
+				BE9342F42320BBCF00C2AD8E /* CGRect+Initializers.swift in Sources */,
+				BE1E72F7225062AF0035072D /* RectCorners.swift in Sources */,
+				BE0B2E5822F9C30700001AE7 /* CGPoint+Rounding.swift in Sources */,
+				BEAF59902251C51B00CC01F1 /* CGSize+Outset.swift in Sources */,
+				BE1E72E4225062AF0035072D /* RectEdges.swift in Sources */,
+				BE1E72C5225060170035072D /* FloatingPoint+Angles.swift in Sources */,
+				BEAF598C2251C2DD00CC01F1 /* CGSize+Rounding.swift in Sources */,
+				BE0B2E5622F9325800001AE7 /* CGPoint+String.swift in Sources */,
+				BE1E72F0225062AF0035072D /* CGSize+Orientation.swift in Sources */,
+				BE1E7288224F19BA0035072D /* FloatingPoint.swift in Sources */,
+				BEAF598A2251C29F00CC01F1 /* CGSize+String.swift in Sources */,
+				BE93A29D22768AE300220CD9 /* Orientation.swift in Sources */,
+				BE1E72C322505FC60035072D /* FloatingPoint+Equality.swift in Sources */,
+				BE0B2E5422F931AA00001AE7 /* CGPoint+Size.swift in Sources */,
+				BE1E72FD225062AF0035072D /* GeomertyExtensionKeys.swift in Sources */,
+				BE0B2E5222F930FB00001AE7 /* CGPoint+Initializers.swift in Sources */,
+				BE1E72F8225062AF0035072D /* CGRect+Math.swift in Sources */,
+				BE1E72F9225062AF0035072D /* CGRect+Convenience.swift in Sources */,
 				9421CF4317D77B5FACC9D23F2FA404CD /* Athena-dummy.m in Sources */,
-				1A63934CB709111CF2549F599BCAE0F6 /* ReplaceMe.swift in Sources */,
+				BE0E9A3C225070C9009F7052 /* EdgeInsets+Addition.swift in Sources */,
+				BE1E72F3225062AF0035072D /* CGPoint+Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +524,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Athena/Athena-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Athena/Athena-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Athena/Athena.modulemap";
 				PRODUCT_MODULE_NAME = Athena;
@@ -358,7 +556,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Athena/Athena-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Athena/Athena-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Athena/Athena.modulemap";
 				PRODUCT_MODULE_NAME = Athena;
@@ -377,6 +575,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -424,7 +623,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -453,7 +652,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Athena_Tests/Pods-Athena_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Athena_Tests/Pods-Athena_Tests.modulemap";
@@ -487,7 +686,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Athena_Tests/Pods-Athena_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Athena_Tests/Pods-Athena_Tests.modulemap";
@@ -508,6 +707,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -552,7 +752,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
