@@ -9,7 +9,7 @@ public extension BinaryFloatingPoint {
     ///   - value: <#value description#>
     ///   - epsilon: <#epsilon description#>
     /// - Returns: <#return value description#>
-    func equalTo<A: BinaryFloatingPoint>(_ value: A, epsilon: A = 0.001) -> Bool {
+    func equalTo<T: BinaryFloatingPoint>(_ value: T, epsilon: T = 0.001) -> Bool {
         
         let fabsDiff = difference(self, value)
         return fabsDiff < Double(epsilon) * fabs(Double(self) + Double(value)) ||
