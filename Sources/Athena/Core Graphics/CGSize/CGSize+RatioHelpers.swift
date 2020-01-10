@@ -9,12 +9,16 @@ public extension CGSize {
         self = AVMakeRect(aspectRatio: ratio, insideRect: rect).size
     }
     
+    var aspectRatio: CGFloat {
+        widthRatio
+    }
+    
     var widthRatio : CGFloat {
-        return width / height
+        width / height
     }
     
     var heightRatio : CGFloat {
-        return height / width
+        height / width
     }
     
     func fitting(aspectRatio ratio: CGSize) -> CGSize {
