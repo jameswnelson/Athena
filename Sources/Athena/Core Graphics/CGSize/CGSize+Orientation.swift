@@ -4,6 +4,18 @@ import CoreGraphics
 
 public extension CGSize {
     
+    var orientation : Orientation {
+        (width > height) ? .landscape : .portrait
+    }
+    
+    var isPanoramic: Bool {
+        width > height * 2
+    }
+    
+    var isSquare: Bool {
+        width == height
+    }
+    
     func oriented(to orientation: Orientation) -> CGSize {
         
         switch orientation {
