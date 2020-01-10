@@ -4,17 +4,19 @@ import UIKit
 
 public enum Orientation: String {
     
-    case landscape, portrait
+    case landscape, portrait, square, panoramic
     
     public init?(raw: String?) {
         
-        guard let raw = raw else {
-            return nil
-        }
+//        guard let raw = raw else {
+//            return nil
+//        }
         
         switch raw {
-        case Orientation.landscape.rawValue: self = .landscape
-        case Orientation.portrait.rawValue: self = .portrait
+        case Self.landscape.rawValue: self = .landscape
+        case Self.portrait.rawValue: self = .portrait
+        case Self.square.rawValue: self = .square
+        case Self.panoramic.rawValue: self = .panoramic
         default: return nil
         }
         
@@ -26,10 +28,10 @@ public enum Orientation: String {
     
     public func flipped() -> Orientation {
         switch self {
-        case .landscape:
-            return .portrait
-        case .portrait:
-            return .landscape
+        case .square:    return .square
+        case .landscape: return .portrait
+        case .portrait:  return .landscape
+        case .panoramic: return .panoramic
         }
     }
     

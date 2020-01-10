@@ -11,6 +11,10 @@ public extension CGSize {
             return CGSize(width: maxDimension, height: minDimension)
         case .portrait:
             return CGSize(width: minDimension, height: maxDimension)
+        case .panoramic:
+            return CGSize(width: maxDimension, height: minDimension)
+        case .square:
+            return CGSize(all: minDimension)
         }
     }
     
