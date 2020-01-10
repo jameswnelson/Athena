@@ -22,7 +22,7 @@ public enum Orientation: String {
     
 }
 
-// MARK: -
+// MARK: - Public Helpers
 
 public extension CGSize {
     

@@ -2,7 +2,7 @@
 import Foundation
 import CoreGraphics
 
-extension CGPoint {
+public extension CGPoint {
     
     var size: CGSize {
         return CGSize.init(width: x, height: y)
