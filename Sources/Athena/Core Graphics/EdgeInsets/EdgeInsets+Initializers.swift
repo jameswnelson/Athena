@@ -5,6 +5,10 @@ import UIKit
 
 public extension UIEdgeInsets {
     
+    init(allInsetTo inset: CGFloat) {
+        self = UIEdgeInsets.init(inset, inset, inset, inset)
+    }
+    
     init(min: CGPoint, max: CGPoint) {
         self.init(min.y, min.x, max.y, max.x)
     }
