@@ -24,7 +24,19 @@ public extension BinaryFloatingPoint {
     
     /// <#Description#>
     var isPositive: Bool {
-        return self > 0
+        self > 0
+    }
+    
+    var cleanValue: String {
+        Float(self).cleanValue
+    }
+    
+}
+
+public extension Float {
+    
+    var cleanValue: String {
+        truncatingRemainder(dividingBy: 1) == 0 ? String(format: "%.0f", self) : String(self)
     }
     
 }
@@ -32,20 +44,19 @@ public extension BinaryFloatingPoint {
 infix operator **: MultiplicationPrecedence
 
 public func ** (left: Float, right: Float) -> Float {
-    return pow(left, right)
+    pow(left, right)
 }
 
 #if os(macOS)
 public func ** (left: Float80, right: Float80) -> Float80 {
-    return pow(left, right)
+    pow(left, right)
 }
 #endif
 
 public func ** (left: CGFloat, right: CGFloat) -> CGFloat {
-    return pow(left, right)
+    pow(left, right)
 }
 
 public func ** (left: Double, right: Double) -> Double {
-    return pow(left, right)
+    pow(left, right)
 }
-
