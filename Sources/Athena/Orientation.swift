@@ -20,6 +20,19 @@ public enum Orientation: String {
         
     }
     
+    public mutating func flip() {
+        self = flipped()
+    }
+    
+    public func flipped() -> Orientation {
+        switch self {
+        case .landscape:
+            return .portrait
+        case .portrait:
+            return .landscape
+        }
+    }
+    
 }
 
 // MARK: - Public Helpers
