@@ -7,11 +7,6 @@ public enum Orientation: String {
     case landscape, portrait, square, panoramic
     
     public init?(raw: String?) {
-        
-//        guard let raw = raw else {
-//            return nil
-//        }
-        
         switch raw {
         case Self.landscape.rawValue: self = .landscape
         case Self.portrait.rawValue: self = .portrait
