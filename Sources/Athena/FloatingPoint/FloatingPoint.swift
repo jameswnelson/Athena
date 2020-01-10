@@ -27,18 +27,6 @@ public extension BinaryFloatingPoint {
         self > 0
     }
     
-    var cleanValue: String {
-        Float(self).cleanValue
-    }
-    
-}
-
-public extension Float {
-    
-    var cleanValue: String {
-        truncatingRemainder(dividingBy: 1) == 0 ? String(format: "%.0f", self) : String(self)
-    }
-    
 }
 
 infix operator **: MultiplicationPrecedence
