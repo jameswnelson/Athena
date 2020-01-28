@@ -16,9 +16,6 @@ public struct GeomertyKeys {
    public static let DefaultEpsilon : Double = 0.01
    public static let DefaultNearnessFactor : Double = 4
     
-   public static let RadiansInDegrees = CGFloat.pi / 180.0
-   public static let DegreesInRadians = 180.0 / CGFloat.pi
-    
 }
 
 public struct EdgeKeys {

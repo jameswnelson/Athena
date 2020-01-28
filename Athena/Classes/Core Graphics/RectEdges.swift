@@ -4,23 +4,23 @@ import Foundation
 public extension CGRect {
     
     var topEdge: CGPoint {
-        return CGPoint(x: midX, y: minY)
+        CGPoint(x: midX, y: minY)
     }
     
     var leftEdge: CGPoint {
-        return CGPoint(x: minX, y: midY)
+        CGPoint(x: minX, y: midY)
     }
     
     var bottomEdge: CGPoint {
-        return CGPoint(x: midX, y: maxY)
+        CGPoint(x: midX, y: maxY)
     }
     
     var rightEdge: CGPoint {
-        return CGPoint(x: maxX, y: midY)
+        CGPoint(x: maxX, y: midY)
     }
     
     var edges : [CGPoint] {
-        return [topEdge, leftEdge, bottomEdge, rightEdge]
+        [topEdge, leftEdge, bottomEdge, rightEdge]
     }
     
 }

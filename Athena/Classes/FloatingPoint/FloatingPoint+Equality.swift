@@ -23,7 +23,7 @@ public extension BinaryFloatingPoint {
     ///   - variance: <#variance description#>
     /// - Returns: <#return value description#>
     func near<A: BinaryFloatingPoint, B: BinaryFloatingPoint>(_ value: A, variance: B) -> Bool {
-        return difference(self, value) < Double(variance)
+        difference(self, value) < Double(variance)
     }
     
     /// <#Description#>
@@ -33,7 +33,7 @@ public extension BinaryFloatingPoint {
     ///   - rhs: <#rhs description#>
     /// - Returns: <#return value description#>
     private func difference<A: BinaryFloatingPoint, B: BinaryFloatingPoint>(_ lhs: A, _ rhs: B) -> Double {
-        return fabs(Double(rhs) - Double(lhs))
+        fabs(Double(rhs) - Double(lhs))
     }
     
 }

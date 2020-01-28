@@ -1,7 +1,7 @@
 
 import Foundation
 
-// MARK: Affine Transform
+// MARK: - Affine Transform
 
 public extension CGAffineTransform {
     
@@ -24,40 +24,40 @@ public extension CGAffineTransform {
     // Static Helpers
     
     static func concatenating(_ transforms : [CGAffineTransform]) -> CGAffineTransform {
-        return transforms.reduce(into: CGAffineTransform.identity) { $0 += $1 }
+        transforms.reduce(CGAffineTransform.identity, +)
     }
     
     static func scale(_ scale: CGFloat) -> CGAffineTransform {
-        return CGAffineTransform(scaleX: scale, y: scale)
+        CGAffineTransform(scaleX: scale, y: scale)
     }
     
     static func scale(x: CGFloat, y: CGFloat) -> CGAffineTransform {
-        return CGAffineTransform(scaleX: x, y: y)
+        CGAffineTransform(scaleX: x, y: y)
     }
     
     static func rotate(_ angle: Double) -> CGAffineTransform {
-        return CGAffineTransform( rotationAngle: CGFloat(angle))
+        CGAffineTransform( rotationAngle: CGFloat(angle))
     }
     
     static func rotate(_ angle: CGFloat) -> CGAffineTransform {
-        return CGAffineTransform(rotationAngle: angle)
+        CGAffineTransform(rotationAngle: angle)
     }
     
     static func translate(_ point: CGPoint) -> CGAffineTransform {
-        return CGAffineTransform(translationX: point.x, y: point.y)
+        CGAffineTransform(translationX: point.x, y: point.y)
     }
     
 }
 
 public func + (left: CGAffineTransform, right: CGAffineTransform) -> CGAffineTransform {
-    return left.concatenating(right)
+    left.concatenating(right)
 }
 
 public func += (left: inout CGAffineTransform, right: CGAffineTransform) {
     left = left + right
 }
 
-// MARK: Core Graphics Context
+// MARK: - Core Graphics Context
 
 public extension CGContext {
     

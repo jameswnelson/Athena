@@ -22,7 +22,7 @@ public extension BinaryFloatingPoint {
     
     /// <#Description#>
     var isPositive: Bool {
-        return self > 0
+        self > 0
     }
     
 }
@@ -30,18 +30,18 @@ public extension BinaryFloatingPoint {
 infix operator **: MultiplicationPrecedence
 
 public func ** (left: Float, right: Float) -> Float {
-    return pow(left, right)
+    pow(left, right)
 }
 
 public func ** (left: Float80, right: Float80) -> Float80 {
-    return pow(left, right)
+    pow(left, right)
 }
 
 public func ** (left: CGFloat, right: CGFloat) -> CGFloat {
-    return pow(left, right)
+    pow(left, right)
 }
 
 public func ** (left: Double, right: Double) -> Double {
-    return pow(left, right)
+    pow(left, right)
 }
 

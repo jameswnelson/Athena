@@ -14,11 +14,11 @@ public extension CGRect {
     }
     
     func insetted<T: BinaryInteger>(_ value: T) -> CGRect {
-        return insetBy(dx: CGFloat(value), dy: CGFloat(value))
+        insetBy(dx: CGFloat(value), dy: CGFloat(value))
     }
     
     func insetted<T: BinaryFloatingPoint>(_ value: T) -> CGRect {
-        return insetBy(dx: CGFloat(value), dy: CGFloat(value))
+        insetBy(dx: CGFloat(value), dy: CGFloat(value))
     }
     
     mutating func inset(_ point: CGPoint) {
@@ -26,7 +26,7 @@ public extension CGRect {
     }
     
     func insetted(_ point: CGPoint) -> CGRect {
-        return insetBy(dx: point.x, dy: point.y)
+        insetBy(dx: point.x, dy: point.y)
     }
     
     mutating func inset(_ size: CGSize) {
@@ -34,7 +34,7 @@ public extension CGRect {
     }
     
     func insetted(_ size: CGSize) -> CGRect {
-        return insetBy(dx: size.width, dy: size.height)
+        insetBy(dx: size.width, dy: size.height)
     }
     
     mutating func inset(_ insets: UIEdgeInsets) {
@@ -43,7 +43,7 @@ public extension CGRect {
     
     func insetted(_ insets: UIEdgeInsets) -> CGRect {
         
-        return CGRect(
+        CGRect(
             x: x + insets.left,
             y: y + insets.top,
             width: width - (insets.left + insets.right),
@@ -66,11 +66,11 @@ public extension CGRect {
     }
     
     func outsetted<T: BinaryInteger>(_ value: T) -> CGRect {
-        return insetted(value * -1)
+        insetted(value * -1)
     }
     
     func outsetted<T: BinaryFloatingPoint>(_ value: T) -> CGRect {
-        return insetted(value * -1)
+        insetted(value * -1)
     }
     
     mutating func outset(_ point: CGPoint) {
@@ -78,7 +78,7 @@ public extension CGRect {
     }
     
     func outsetted(_ point: CGPoint) -> CGRect {
-        return insetted(point * -1)
+        insetted(point * -1)
     }
     
     mutating func outset(_ size: CGSize) {
@@ -86,7 +86,7 @@ public extension CGRect {
     }
     
     func outsetted(_ size: CGSize) -> CGRect {
-        return insetted(size * -1)
+        insetted(size * -1)
     }
     
     mutating func outset<T: BinaryInteger>(byFactor factor: T) {
@@ -98,7 +98,7 @@ public extension CGRect {
     }
     
     func outsetted(byFactor factor: CGFloat) -> CGRect {
-        return outsetted(size * factor)
+        outsetted(size * factor)
     }
 
 }

@@ -4,7 +4,7 @@ import Foundation
 extension CGPoint {
     
     var size: CGSize {
-        return CGSize.init(width: x, height: y)
+        CGSize.init(width: x, height: y)
     }
     
     init(_ size: CGSize) {

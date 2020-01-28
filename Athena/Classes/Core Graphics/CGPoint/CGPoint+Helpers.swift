@@ -1,5 +1,4 @@
 
-import UIKit
 import Foundation
 
 // MARK: - Helpers
@@ -7,23 +6,23 @@ import Foundation
 public extension CGPoint {
     
     func distance(between p: CGPoint) -> CGFloat {
-        return sqrt(pow(x - p.x, 2) + pow(y - p.y, 2))
+        sqrt(pow(x - p.x, 2) + pow(y - p.y, 2))
     }
     
     func pointDistance(between point: CGPoint) -> CGPoint {
-        return (self - point).abs()
+        (self - point).abs()
     }
 
     var hypotenuse : CGFloat {
-        return hypot(x, y)
+        hypot(x, y)
     }
     
     func hypotenuseBetween(point: CGPoint) -> CGFloat {
-        return (point - self).hypotenuse
+        (point - self).hypotenuse
     }
     
     var reciprocal : CGPoint {
-        return CGPoint(x: 1/x, y: 1/y)
+        CGPoint(x: 1/x, y: 1/y)
     }
     
 }
@@ -69,12 +68,12 @@ public extension CGPoint {
     
 }
 
-// MARK:
+// MARK: - Negation
 
 public extension CGPoint {
     
     static prefix func -(lhs: CGPoint) -> CGPoint {
-        return CGPoint(x: -lhs.x, y: -lhs.y)
+        CGPoint(x: -lhs.x, y: -lhs.y)
     }
     
     mutating func flipYAxis() {
@@ -82,7 +81,7 @@ public extension CGPoint {
     }
     
     var flippedYAxis : CGPoint {
-        return CGPoint(x: x, y: -y)
+        CGPoint(x: x, y: -y)
     }
     
 }

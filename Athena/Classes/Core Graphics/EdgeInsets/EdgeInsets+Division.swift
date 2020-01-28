@@ -22,7 +22,7 @@ public extension UIEdgeInsets {
 public extension UIEdgeInsets {
     
     static func / <T: BinaryInteger>(insets: UIEdgeInsets, value: T) -> UIEdgeInsets {
-        return insets / Double(value)
+        insets / Double(value)
     }
     
     static func /= <T: BinaryInteger>(insets: inout UIEdgeInsets, value: T) {

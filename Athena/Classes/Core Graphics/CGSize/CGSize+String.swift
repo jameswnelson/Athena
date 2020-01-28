@@ -29,15 +29,15 @@ public extension CGSize {
     }
     
     var string : String {
-        return string(format: GeomertyKeys.DefaultFloatFormat)
+        string(format: GeomertyKeys.DefaultFloatFormat)
     }
     
     func string(formatPrecision format: String) -> String {
-        return string(format: format+GeomertyKeys.MultiplicationSymbol+format)
+        string(format: format+GeomertyKeys.MultiplicationSymbol+format)
     }
     
     func string(format: String) -> String {
-        return String.init(format: format, width, height)
+        String.init(format: format, width, height)
     }
     
 }

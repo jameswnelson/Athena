@@ -9,11 +9,11 @@ public extension CGSize {
     }
     
     var widthRatio : CGFloat {
-        return width / height
+        width / height
     }
     
     var heightRatio : CGFloat {
-        return height / width
+        height / width
     }
     
     func fitting(aspectRatio ratio: CGSize) -> CGSize {

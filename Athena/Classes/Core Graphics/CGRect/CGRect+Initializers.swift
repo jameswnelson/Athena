@@ -5,8 +5,7 @@ import AVFoundation.AVUtilities
 // MARK: - Various
 
 public extension CGRect {
-    
-    
+        
     /// <#Description#>
     ///
     /// Because this uses AV Foundation Utilites for it's calculation it will be relatively slow.

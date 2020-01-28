@@ -1,6 +1,5 @@
 
 import Foundation
-import UIKit
 
 public enum Orientation: String {
     
@@ -22,20 +21,20 @@ public enum Orientation: String {
     
 }
 
-// MARK: -
+// MARK: - Orientation of Size
 
 public extension CGSize {
     
     var orientation : Orientation {
-        return (width > height) ? .landscape : .portrait
+        (width > height) ? .landscape : .portrait
     }
     
     var isPanoramic: Bool {
-        return width > height * 2
+        width > height * 2
     }
     
     var isSquare: Bool {
-        return width == height
+        width == height
     }
     
 }

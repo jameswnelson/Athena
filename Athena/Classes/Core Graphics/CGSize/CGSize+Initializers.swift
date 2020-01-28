@@ -13,6 +13,14 @@ public extension CGSize {
         self.init(width: CGFloat(width), height: CGFloat(height))
     }
     
+    init<T: BinaryFloatingPoint>(all: T?) {
+        self.init(width: all, height: all)
+    }
+
+    init<T: BinaryFloatingPoint>(width: T?, height: T?) {
+        self.init(width: CGFloat(width ?? 0), height: CGFloat(height ?? 0))
+    }
+    
 }
 
 // MARK: - Integer
@@ -25,6 +33,14 @@ public extension CGSize {
     
     init<T: BinaryInteger>(width: T = 0, height: T = 0) {
         self.init(width: CGFloat(width), height: CGFloat(height))
+    }
+    
+    init<T: BinaryInteger>(all: T?) {
+        self.init(width: all, height: all)
+    }
+
+    init<T: BinaryInteger>(width: T?, height: T?) {
+        self.init(width: CGFloat(width ?? 0), height: CGFloat(height ?? 0))
     }
     
 }

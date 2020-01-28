@@ -6,15 +6,15 @@ import Foundation
 public extension CGPoint {
     
     static func + <T: BinaryInteger>(left: CGPoint, right: T) -> CGPoint {
-        return left + CGPoint(all: right)
+        left + CGPoint(all: right)
     }
     
     static func + <T: BinaryFloatingPoint>(left: CGPoint, right: T) -> CGPoint {
-        return left + CGPoint(all: right)
+        left + CGPoint(all: right)
     }
     
     static func + (left: CGPoint, right: CGPoint) -> CGPoint {
-        return CGPoint(x: left.x + right.x, y: left.y + right.y)
+        CGPoint(x: left.x + right.x, y: left.y + right.y)
     }
     
     static func +=  <T: BinaryInteger>(left: inout CGPoint, right: T) {

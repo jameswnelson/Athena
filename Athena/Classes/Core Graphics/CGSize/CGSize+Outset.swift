@@ -8,7 +8,7 @@ public extension CGSize {
     }
     
     func outsetted(_ outsets: UIEdgeInsets) -> CGSize {
-        return insetted(outsets * -1)
+        insetted(outsets * -1)
     }
     
 }
@@ -22,7 +22,7 @@ public extension CGSize {
     }
     
     func outsetted<T: BinaryInteger>(_ value: T) -> CGSize {
-        return outsetted(Float(value))
+        outsetted(Float(value))
     }
     
 }
@@ -36,7 +36,7 @@ public extension CGSize {
     }
     
     func outsetted<T: BinaryFloatingPoint>(_ value: T) -> CGSize {
-        return insetted(-CGFloat(value))
+        insetted(-CGFloat(value))
     }
     
 }

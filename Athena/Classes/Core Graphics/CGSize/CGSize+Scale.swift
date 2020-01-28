@@ -10,7 +10,7 @@ public extension CGSize {
     }
     
     func fitted(_ size: CGSize) -> CGSize {
-        return self * (size / self).minDimension
+        self * (size / self).minDimension
     }
     
 }
@@ -24,7 +24,7 @@ public extension CGSize {
     }
     
     func fitted<T: BinaryInteger>(height newHeight: T) -> CGSize {
-        return fitted(height: Float(newHeight))
+        fitted(height: Float(newHeight))
     }
     
     mutating func fit<T: BinaryInteger>(width newWidth: T) {
@@ -32,7 +32,7 @@ public extension CGSize {
     }
     
     func fitted<T: BinaryInteger>(width newWidth: T) -> CGSize {
-        return fitted(width: Float(newWidth))
+        fitted(width: Float(newWidth))
     }
     
 }
@@ -46,7 +46,7 @@ public extension CGSize {
     }
     
     func fitted<T: BinaryFloatingPoint>(height newHeight: T) -> CGSize {
-        return CGSize.init(width: width * (CGFloat(newHeight) / height), height: CGFloat(newHeight))
+        CGSize.init(width: width * (CGFloat(newHeight) / height), height: CGFloat(newHeight))
     }
     
     mutating func fit<T: BinaryFloatingPoint>(width newWidth: T) {
@@ -54,7 +54,7 @@ public extension CGSize {
     }
     
     func fitted<T: BinaryFloatingPoint>(width newWidth: T) -> CGSize {
-        return CGSize.init(width: width, height: height * (CGFloat(newWidth) / width))
+        CGSize.init(width: width, height: height * (CGFloat(newWidth) / width))
     }
 
 }
@@ -68,7 +68,7 @@ public extension CGSize {
     }
     
     func filling(_ size: CGSize) -> CGSize {
-        return self * (size / self).maxDimension
+        self * (size / self).maxDimension
     }
     
 }

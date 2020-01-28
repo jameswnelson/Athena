@@ -6,7 +6,7 @@ import Foundation
 public extension CGSize {
     
     var minDimension: CGFloat {
-        return Swift.min(width, height)
+        Swift.min(width, height)
     }
     
     mutating func min<T: BinaryInteger>(by minimum: T) {
@@ -22,29 +22,29 @@ public extension CGSize {
     }
     
     func minned<T: BinaryInteger>(by minimum: T) -> CGSize {
-        return Athena.min(self, minimum)
+        Athena.min(self, minimum)
     }
     
     func minned<T: BinaryFloatingPoint>(by minimum: T) -> CGSize {
-        return Athena.min(self, minimum)
+        Athena.min(self, minimum)
     }
     
     func minned(by minimum: CGSize) -> CGSize {
-        return Athena.min(self, minimum)
+        Athena.min(self, minimum)
     }
     
 }
 
 public func min<T: BinaryInteger>(_ lhs: CGSize, _ rhs: T) -> CGSize {
-    return min(lhs, CGSize(all: rhs))
+    min(lhs, CGSize(all: rhs))
 }
 
 public func min<T: BinaryFloatingPoint>(_ lhs: CGSize, _ rhs: T) -> CGSize {
-    return min(lhs, CGSize(all: rhs))
+    min(lhs, CGSize(all: rhs))
 }
 
 public func min(_ lhs: CGSize, _ rhs: CGSize) -> CGSize {
-    return CGSize(width: min(lhs.width, rhs.width), height: min(lhs.height, rhs.height))
+    CGSize(width: min(lhs.width, rhs.width), height: min(lhs.height, rhs.height))
 }
 
 // MARK: - Max
@@ -52,7 +52,7 @@ public func min(_ lhs: CGSize, _ rhs: CGSize) -> CGSize {
 public extension CGSize {
     
     var maxDimension: CGFloat {
-        return Swift.max(width, height)
+        Swift.max(width, height)
     }
     
     mutating func max<T: BinaryInteger>(by maximum: T) {
@@ -68,27 +68,27 @@ public extension CGSize {
     }
     
     func maxed<T: BinaryInteger>(by maximum: T) -> CGSize {
-        return Athena.max(self, maximum)
+        Athena.max(self, maximum)
     }
     
     func maxed<T: BinaryFloatingPoint>(by maximum: T) -> CGSize {
-        return Athena.max(self, maximum)
+        Athena.max(self, maximum)
     }
     
     func maxed(by maximum: CGSize) -> CGSize {
-        return Athena.max(self, maximum)
+        Athena.max(self, maximum)
     }
     
 }
 
 public func max<T: BinaryInteger>(_ lhs: CGSize, _ rhs: T) -> CGSize {
-    return max(lhs, CGSize(all: rhs))
+    max(lhs, CGSize(all: rhs))
 }
 
 public func max<T: BinaryFloatingPoint>(_ lhs: CGSize, _ rhs: T) -> CGSize {
-    return max(lhs, CGSize(all: rhs))
+    max(lhs, CGSize(all: rhs))
 }
 
 public func max(_ lhs: CGSize, _ rhs: CGSize) -> CGSize {
-    return CGSize(width: max(lhs.width, rhs.width), height: max(lhs.height, rhs.height))
+    CGSize(width: max(lhs.width, rhs.width), height: max(lhs.height, rhs.height))
 }

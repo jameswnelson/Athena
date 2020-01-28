@@ -28,7 +28,7 @@ public extension UIEdgeInsets {
 public extension UIEdgeInsets {
     
     static var zero: UIEdgeInsets {
-        return UIEdgeInsets.init()
+        UIEdgeInsets.init()
     }
     
     init<T: BinaryFloatingPoint>(all value: T) {

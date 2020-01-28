@@ -11,7 +11,7 @@ public extension CGRect {
     }
     
     func clipped(to: CGRect) -> CGRect {
-        return intersection(to)
+        intersection(to)
     }
 
 }
@@ -25,12 +25,12 @@ public extension CGRect {
     }
     
     var flipedYAxis : CGRect {
-        return CGRect(origin: origin.flippedYAxis, size: size)
+        CGRect(origin: origin.flippedYAxis, size: size)
     }
     
     func insetDifferenceFromCorner(_ rect: CGRect) -> UIEdgeInsets {
         
-        return UIEdgeInsets(
+        UIEdgeInsets(
             top: rect.y - y,
             left: rect.x - x,
             bottom: rect.maxY - maxY,
@@ -40,7 +40,7 @@ public extension CGRect {
     
     func insetDifferenceFromOrigin(_ rect: CGRect) -> UIEdgeInsets {
         
-        return UIEdgeInsets(
+        UIEdgeInsets(
             top: rect.y - y,
             left: rect.x - x,
             bottom: rect.maxY - y,
