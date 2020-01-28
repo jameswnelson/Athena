@@ -3,6 +3,10 @@ import UIKit
 
 public extension UIEdgeInsets {
     
+    static var zero: Self {
+        .init()
+    }
+    
     init(allInsetTo inset: CGFloat) {
         self = .init(inset, inset, inset, inset)
     }
@@ -30,10 +34,6 @@ public extension UIEdgeInsets {
 // MARK: - Floating Point
 
 public extension UIEdgeInsets {
-    
-    static var zero: Self {
-        .init()
-    }
     
     init<T: BinaryFloatingPoint>(all value: T) {
         self.init(value, value, value, value)

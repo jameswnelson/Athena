@@ -25,16 +25,30 @@ public enum Orientation: String {
 
 public extension CGSize {
     
-    var orientation : Orientation {
-        (width > height) ? .landscape : .portrait
-    }
-    
     var isPanoramic: Bool {
         width > height * 2
     }
     
     var isSquare: Bool {
         width == height
+    }
+    
+    var orientation : Orientation {
+        (width > height) ? .landscape : .portrait
+    }
+    
+    func oriented(to orientation: Orientation) -> CGSize {
+        
+        switch orientation {
+        case .landscape:
+            return CGSize(width: maxDimension, height: minDimension)
+        case .portrait:
+            return CGSize(width: minDimension, height: maxDimension)
+        }
+    }
+    
+    mutating func orient(to orientation: Orientation) {
+        self = oriented(to: orientation)
     }
     
 }
