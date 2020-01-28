@@ -1,54 +1,40 @@
 
-import Foundation
 import UIKit
 
 public enum Orientation: String {
     
-    case landscape
-    case portrait
-    case square
-    case panoramic
+    case landscape, portrait
+    
+    public init?(raw: String?) {
+        
+        guard let raw = raw else {
+            return nil
+        }
+        
+        switch raw {
+        case Orientation.landscape.rawValue: self = .landscape
+        case Orientation.portrait.rawValue: self = .portrait
+        default: return nil
+        }
+        
+    }
     
 }
 
-// MARK: - Public Helpers
+// MARK: - Orientation of Size
 
-public extension Orientation {
+public extension CGSize {
     
-    static var `default`: Self {
-        .landscape
+    var orientation : Orientation {
+        (width > height) ? .landscape : .portrait
     }
     
-    init?(raw: String?) {
-        switch raw {
-        case Self.landscape.rawValue:
-            self = .landscape
-        case Self.portrait.rawValue:
-            self = .portrait
-        case Self.square.rawValue:
-            self = .square
-        case Self.panoramic.rawValue:
-            self = .panoramic
-        default:
-            return nil
-        }
+    var isPanoramic: Bool {
+        width > height * 2
     }
     
-    func flipped() -> Orientation {
-        switch self {
-        case .square:
-            return .square
-        case .landscape:
-            return .portrait
-        case .portrait:
-            return .landscape
-        case .panoramic:
-            return .panoramic
-        }
-    }
-    
-    mutating func flip() {
-        self = flipped()
+    var isSquare: Bool {
+        width == height
     }
     
 }
