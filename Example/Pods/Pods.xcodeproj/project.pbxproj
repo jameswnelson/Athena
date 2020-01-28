@@ -45,6 +45,8 @@
 		BE1E72FC225062AF0035072D /* CGRect+InsetOutset.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72E2225062AF0035072D /* CGRect+InsetOutset.swift */; };
 		BE1E72FD225062AF0035072D /* GeomertyExtensionKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E72E3225062AF0035072D /* GeomertyExtensionKeys.swift */; };
 		BE9342F42320BBCF00C2AD8E /* CGRect+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9342F32320BBCF00C2AD8E /* CGRect+Initializers.swift */; };
+		BE9342F72321CDE200C2AD8E /* CGPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9342F52321CDE200C2AD8E /* CGPathExtensions.swift */; };
+		BE9342F82321CDE200C2AD8E /* CGAffineTransformExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9342F62321CDE200C2AD8E /* CGAffineTransformExtensions.swift */; };
 		BE93A29D22768AE300220CD9 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE93A29C22768AE300220CD9 /* Orientation.swift */; };
 		BEAF598A2251C29F00CC01F1 /* CGSize+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF59892251C29F00CC01F1 /* CGSize+String.swift */; };
 		BEAF598C2251C2DD00CC01F1 /* CGSize+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF598B2251C2DD00CC01F1 /* CGSize+Rounding.swift */; };
@@ -112,6 +114,8 @@
 		BE1E72E2225062AF0035072D /* CGRect+InsetOutset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+InsetOutset.swift"; sourceTree = "<group>"; };
 		BE1E72E3225062AF0035072D /* GeomertyExtensionKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeomertyExtensionKeys.swift; sourceTree = "<group>"; };
 		BE9342F32320BBCF00C2AD8E /* CGRect+Initializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Initializers.swift"; sourceTree = "<group>"; };
+		BE9342F52321CDE200C2AD8E /* CGPathExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPathExtensions.swift; sourceTree = "<group>"; };
+		BE9342F62321CDE200C2AD8E /* CGAffineTransformExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGAffineTransformExtensions.swift; sourceTree = "<group>"; };
 		BE93A29C22768AE300220CD9 /* Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Orientation.swift; path = Athena/Classes/Orientation.swift; sourceTree = "<group>"; };
 		BEAF59892251C29F00CC01F1 /* CGSize+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+String.swift"; sourceTree = "<group>"; };
 		BEAF598B2251C2DD00CC01F1 /* CGSize+Rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Rounding.swift"; sourceTree = "<group>"; };
@@ -205,14 +209,16 @@
 		BE1E72C6225062AF0035072D /* Core Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				BE0E9A35225070C8009F7052 /* EdgeInsets */,
-				BE1E72D6225062AF0035072D /* CGPoint */,
-				BE1E72CB225062AF0035072D /* CGSize */,
-				BE1E72DD225062AF0035072D /* CGRect */,
+				BE9342F62321CDE200C2AD8E /* CGAffineTransformExtensions.swift */,
+				BE9342F52321CDE200C2AD8E /* CGPathExtensions.swift */,
 				BE1E72C7225062AF0035072D /* RectEdges.swift */,
 				BE1E72DA225062AF0035072D /* NumberFormatter+Size.swift */,
 				BE1E72DC225062AF0035072D /* RectCorners.swift */,
 				BE1E72E3225062AF0035072D /* GeomertyExtensionKeys.swift */,
+				BE0E9A35225070C8009F7052 /* EdgeInsets */,
+				BE1E72D6225062AF0035072D /* CGPoint */,
+				BE1E72CB225062AF0035072D /* CGSize */,
+				BE1E72DD225062AF0035072D /* CGRect */,
 			);
 			name = "Core Graphics";
 			path = "Athena/Classes/Core Graphics";
@@ -478,6 +484,7 @@
 				BEAF59902251C51B00CC01F1 /* CGSize+Outset.swift in Sources */,
 				BE1E72E4225062AF0035072D /* RectEdges.swift in Sources */,
 				BE1E72C5225060170035072D /* FloatingPoint+Angles.swift in Sources */,
+				BE9342F72321CDE200C2AD8E /* CGPathExtensions.swift in Sources */,
 				BEAF598C2251C2DD00CC01F1 /* CGSize+Rounding.swift in Sources */,
 				BE0B2E5622F9325800001AE7 /* CGPoint+String.swift in Sources */,
 				BE1E72F0225062AF0035072D /* CGSize+Orientation.swift in Sources */,
@@ -487,6 +494,7 @@
 				BE1E72C322505FC60035072D /* FloatingPoint+Equality.swift in Sources */,
 				BE0B2E5422F931AA00001AE7 /* CGPoint+Size.swift in Sources */,
 				BE1E72FD225062AF0035072D /* GeomertyExtensionKeys.swift in Sources */,
+				BE9342F82321CDE200C2AD8E /* CGAffineTransformExtensions.swift in Sources */,
 				BE0B2E5222F930FB00001AE7 /* CGPoint+Initializers.swift in Sources */,
 				BE1E72F8225062AF0035072D /* CGRect+Math.swift in Sources */,
 				BE1E72F9225062AF0035072D /* CGRect+Convenience.swift in Sources */,

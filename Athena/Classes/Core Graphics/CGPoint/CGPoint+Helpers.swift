@@ -56,7 +56,7 @@ public extension CGPoint {
     
     func rotated(_ pivot: CGPoint, angle: CGFloat) -> CGPoint {
         
-        var point = self.applying(.translatedBy(-pivot))
+        var point = self.applying(.translate(-pivot))
         point = point.applying(.rotate(angle))
         point = point.applying(.translate(pivot))
         

@@ -1,46 +1,6 @@
 
-import Foundation
-
 import UIKit
 import Foundation
-import AVFoundation
-
-// MARK: - Initilizers
-
-public extension CGRect {
-    
-    init(aspectRatio ratio: CGSize, inside rect: CGRect) {
-        self = AVMakeRect(aspectRatio: ratio, insideRect: rect)
-    }
-    
-    init(point: CGPoint, insets: UIEdgeInsets) {
-        self = CGRect(origin: point, size: .zero).insetted(insets)
-    }
-    
-    init(minPoint: CGPoint, maxPoint: CGPoint) {
-        self.init(origin: minPoint, size: CGSize(maxPoint-minPoint))
-    }
-    
-    init(center: CGPoint, size: CGSize) {
-        self = CGRect(origin: center, size: .zero).outsetted(size/2)
-    }
-    
-    init(containing points: CGPoint...) {
-        
-        guard let first = points.first else {
-            self = .zero
-            return
-        }
-        
-        var minPoint = first, maxPoint = first
-        points.forEach {
-            minPoint.min(by: $0)
-            maxPoint.max(by: $0)
-        }
-        self = CGRect(minPoint: minPoint, maxPoint: maxPoint)
-    }
-    
-}
 
 // MARK: - Intersection and Limiting
 
