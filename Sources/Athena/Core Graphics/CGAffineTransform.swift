@@ -61,7 +61,7 @@ extension CGAffineTransform {
 
 // MARK: - BinaryFloatingPoint
 
-extension CGAffineTransform {
+public extension CGAffineTransform {
     
     init<T: BinaryFloatingPoint>(scale: T) {
         self = .scale(CGFloat(scale))
