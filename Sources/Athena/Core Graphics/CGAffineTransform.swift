@@ -35,7 +35,7 @@ public extension CGAffineTransform {
 
 // MARK: - BinaryInteger
 
-extension CGAffineTransform {
+public extension CGAffineTransform {
     
     init<T: BinaryInteger>(scale: T) {
         self = .scale(CGFloat(scale))

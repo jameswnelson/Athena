@@ -3,10 +3,6 @@ import UIKit
 
 public extension UIEdgeInsets {
     
-    static var zero: Self {
-        .init()
-    }
-    
     init(allInsetTo inset: CGFloat) {
         self = .init(inset, inset, inset, inset)
     }
