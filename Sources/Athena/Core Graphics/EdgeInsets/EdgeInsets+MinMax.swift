@@ -1,6 +1,4 @@
 
-import Foundation
-import CoreGraphics
 import UIKit
 
 public extension UIEdgeInsets {
@@ -9,7 +7,7 @@ public extension UIEdgeInsets {
         self = maxed(by: value)
     }
     
-    func maxed(by value: CGFloat) -> UIEdgeInsets {
+    func maxed(by value: CGFloat) -> Self {
         .init(
             Swift.max(top, value),
             Swift.max(left, value),

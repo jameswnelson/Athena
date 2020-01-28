@@ -1,11 +1,11 @@
 
-import Foundation
+import UIKit
 
 public extension CGMutablePath {
     
-    class func path(from points: CGPoint...) -> CGMutablePath {
+    class func path(from points: CGPoint...) -> Self {
         
-        let path = CGMutablePath()
+        let path = Self()
         guard let first = points.first else {
             return path
         }

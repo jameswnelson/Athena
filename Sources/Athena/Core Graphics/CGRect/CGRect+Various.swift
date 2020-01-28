@@ -1,9 +1,5 @@
 
 import UIKit
-import Foundation
-
-import AVFoundation
-import CoreGraphics
 
 // MARK: - Intersection and Limiting
 

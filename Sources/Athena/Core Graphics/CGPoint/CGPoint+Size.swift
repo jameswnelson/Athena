@@ -1,11 +1,10 @@
 
-import Foundation
-import CoreGraphics
+import UIKit
 
 public extension CGPoint {
     
     var size: CGSize {
-        CGSize.init(width: x, height: y)
+        .init(width: x, height: y)
     }
     
     init(_ size: CGSize) {

@@ -1,16 +1,10 @@
 
-import Foundation
-import CoreGraphics
+import UIKit
 
 public extension CGSize {
     
     func abs() -> CGSize {
         CGSize.init(width: Darwin.abs(Int32(width)), height: Darwin.abs(Int32(height)))
-    }
-    
-    // TODO: Remove as fabs is deprecated
-    func fabs() -> CGSize {
-        CGSize.init(width: Darwin.fabs(width), height: Darwin.fabs(height))
     }
     
     func round() -> CGSize {

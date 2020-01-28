@@ -1,6 +1,5 @@
 
-import Foundation
-import CoreGraphics
+import UIKit
 
 // MARK: - Min
 
@@ -45,7 +44,7 @@ public func min<T: BinaryFloatingPoint>(_ lhs: CGPoint, _ rhs: T) -> CGPoint {
 }
 
 public func min(_ lhs: CGPoint, _ rhs: CGPoint) -> CGPoint {
-    CGPoint(x: min(lhs.x, rhs.x), y: min(lhs.y, rhs.y))
+    .init(x: min(lhs.x, rhs.x), y: min(lhs.y, rhs.y))
 }
 
 // MARK: - Max
@@ -91,5 +90,5 @@ public func max<T: BinaryFloatingPoint>(_ lhs: CGPoint, _ rhs: T) -> CGPoint {
 }
 
 public func max(_ lhs: CGPoint, _ rhs: CGPoint) -> CGPoint {
-    CGPoint(x: max(lhs.x, rhs.x), y: max(lhs.y, rhs.y))
+    .init(x: max(lhs.x, rhs.x), y: max(lhs.y, rhs.y))
 }

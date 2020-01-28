@@ -1,12 +1,10 @@
 
-import Foundation
-import CoreGraphics
 import UIKit
 
 public extension UIEdgeInsets {
     
     init(allInsetTo inset: CGFloat) {
-        self = UIEdgeInsets.init(inset, inset, inset, inset)
+        self = .init(inset, inset, inset, inset)
     }
     
     init(min: CGPoint, max: CGPoint) {
@@ -33,8 +31,8 @@ public extension UIEdgeInsets {
 
 public extension UIEdgeInsets {
     
-    static var zero: UIEdgeInsets {
-        UIEdgeInsets.init()
+    static var zero: Self {
+        .init()
     }
     
     init<T: BinaryFloatingPoint>(all value: T) {
@@ -46,9 +44,7 @@ public extension UIEdgeInsets {
     }
     
     init<T: BinaryFloatingPoint>(top: T? = nil, left: T? = nil, bottom: T? = nil, right: T? = nil) {
-        
-        let zero: T = 0
-        self.init(top ?? zero, left ?? zero, bottom ?? zero, right ?? zero)
+        self.init(top ?? .zero, left ?? .zero, bottom ?? .zero, right ?? .zero)
     }
     
     init<T: BinaryFloatingPoint>(_ top: T, _ left: T, _ bottom: T, _ right: T) {
@@ -70,9 +66,7 @@ public extension UIEdgeInsets {
     }
     
     init<T: BinaryInteger>(top: T? = nil, left: T? = nil, bottom: T? = nil, right: T? = nil) {
-        
-        let zero: T = 0
-        self.init(top ?? zero, left ?? zero, bottom ?? zero, right ?? zero)
+        self.init(top ?? .zero, left ?? .zero, bottom ?? .zero, right ?? .zero)
     }
     
     init<T: BinaryInteger>(_ top: T, _ left: T, _ bottom: T, _ right: T) {

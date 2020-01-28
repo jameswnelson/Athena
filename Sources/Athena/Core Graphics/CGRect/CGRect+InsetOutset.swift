@@ -1,6 +1,4 @@
 
-import Foundation
-import CoreGraphics
 import UIKit
 
 // MARK: - Inset
@@ -15,11 +13,11 @@ public extension CGRect {
         self = insetted(value)
     }
     
-    func insetted<T: BinaryInteger>(_ value: T) -> CGRect {
+    func insetted<T: BinaryInteger>(_ value: T) -> Self {
         insetBy(dx: CGFloat(value), dy: CGFloat(value))
     }
     
-    func insetted<T: BinaryFloatingPoint>(_ value: T) -> CGRect {
+    func insetted<T: BinaryFloatingPoint>(_ value: T) -> Self {
         insetBy(dx: CGFloat(value), dy: CGFloat(value))
     }
     
@@ -27,7 +25,7 @@ public extension CGRect {
         self = insetted(point)
     }
     
-    func insetted(_ point: CGPoint) -> CGRect {
+    func insetted(_ point: CGPoint) -> Self {
         insetBy(dx: point.x, dy: point.y)
     }
     
@@ -35,7 +33,7 @@ public extension CGRect {
         self = insetted(size)
     }
     
-    func insetted(_ size: CGSize) -> CGRect {
+    func insetted(_ size: CGSize) -> Self {
         insetBy(dx: size.width, dy: size.height)
     }
     
@@ -43,9 +41,8 @@ public extension CGRect {
         self = insetted(insets)
     }
     
-    func insetted(_ insets: UIEdgeInsets) -> CGRect {
-        
-        CGRect(
+    func insetted(_ insets: UIEdgeInsets) -> Self {
+        .init(
             x: x + insets.left,
             y: y + insets.top,
             width: width - (insets.left + insets.right),
@@ -67,11 +64,11 @@ public extension CGRect {
         inset(value * -1)
     }
     
-    func outsetted<T: BinaryInteger>(_ value: T) -> CGRect {
+    func outsetted<T: BinaryInteger>(_ value: T) -> Self {
         insetted(value * -1)
     }
     
-    func outsetted<T: BinaryFloatingPoint>(_ value: T) -> CGRect {
+    func outsetted<T: BinaryFloatingPoint>(_ value: T) -> Self {
         insetted(value * -1)
     }
     
@@ -79,7 +76,7 @@ public extension CGRect {
         inset(point * -1)
     }
     
-    func outsetted(_ point: CGPoint) -> CGRect {
+    func outsetted(_ point: CGPoint) -> Self {
         insetted(point * -1)
     }
     
@@ -87,7 +84,7 @@ public extension CGRect {
         inset(size * -1)
     }
     
-    func outsetted(_ size: CGSize) -> CGRect {
+    func outsetted(_ size: CGSize) -> Self {
         insetted(size * -1)
     }
     
@@ -99,7 +96,7 @@ public extension CGRect {
         outset(size * factor)
     }
     
-    func outsetted(byFactor factor: CGFloat) -> CGRect {
+    func outsetted(byFactor factor: CGFloat) -> Self {
         outsetted(size * factor)
     }
 

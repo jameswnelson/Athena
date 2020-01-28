@@ -1,18 +1,17 @@
 
-import Foundation
 import UIKit
 
 // MARK: - Floating Point
 
 public extension UIEdgeInsets {
     
-    static func / <T: BinaryFloatingPoint>(insets: UIEdgeInsets, value: T) -> UIEdgeInsets {
+    static func / <T: BinaryFloatingPoint>(insets: Self, value: T) -> UIEdgeInsets {
         
         let value = CGFloat(value)
-        return UIEdgeInsets(top: insets.top / value, left: insets.left / value, bottom: insets.bottom / value, right: insets.right / value)
+        return .init(top: insets.top / value, left: insets.left / value, bottom: insets.bottom / value, right: insets.right / value)
     }
     
-    static func /= <T: BinaryFloatingPoint>(insets: inout UIEdgeInsets, value: T) {
+    static func /= <T: BinaryFloatingPoint>(insets: inout Self, value: T) {
         insets = insets / value
     }
     
@@ -22,11 +21,11 @@ public extension UIEdgeInsets {
 
 public extension UIEdgeInsets {
     
-    static func / <T: BinaryInteger>(insets: UIEdgeInsets, value: T) -> UIEdgeInsets {
+    static func / <T: BinaryInteger>(insets: Self, value: T) -> Self {
         insets / Double(value)
     }
     
-    static func /= <T: BinaryInteger>(insets: inout UIEdgeInsets, value: T) {
+    static func /= <T: BinaryInteger>(insets: inout Self, value: T) {
         insets /= Double(value)
     }
     

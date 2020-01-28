@@ -1,7 +1,6 @@
 
-import Foundation
+import UIKit
 import AVFoundation
-import CoreGraphics
 
 public extension CGSize {
     

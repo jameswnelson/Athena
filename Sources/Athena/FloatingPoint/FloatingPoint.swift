@@ -1,6 +1,4 @@
 
-import Foundation
-import CoreGraphics
 import UIKit
 
 // MARK: - Bool

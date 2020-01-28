@@ -1,6 +1,5 @@
 
-import Foundation
-import CoreGraphics
+import UIKit
 
 public extension CGRect {
     
@@ -31,7 +30,7 @@ public extension CGRect {
     func scaled(aroundPoint point: CGPoint, sx: CGFloat, sy: CGFloat) -> CGRect {
         
         var translationTransform = CGAffineTransform(translationX: -point.x, y: -point.y)
-        var rect = self.applying(translationTransform)
+        var rect = applying(translationTransform)
         
         let scaleTransform = CGAffineTransform(scaleX: sx, y: sy)
         rect = rect.applying(scaleTransform)

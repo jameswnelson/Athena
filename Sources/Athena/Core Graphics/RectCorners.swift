@@ -1,6 +1,5 @@
 
-import Foundation
-import CoreGraphics
+import UIKit
 
 public struct RectCorners {
 
@@ -23,11 +22,10 @@ public struct RectCorners {
     }
 
     public var flippedY : RectCorners {
-    
-        RectCorners(topLeft: CGPoint(x: topLeft.x, y: bottomLeft.y),
-                    topRight: CGPoint(x: topRight.x, y: bottomRight.y),
-                    bottomLeft: CGPoint(x: bottomLeft.x, y: topLeft.y),
-                    bottomRight: CGPoint(x: topLeft.x, y: topRight.y))
+        .init(topLeft: CGPoint(x: topLeft.x, y: bottomLeft.y),
+              topRight: CGPoint(x: topRight.x, y: bottomRight.y),
+              bottomLeft: CGPoint(x: bottomLeft.x, y: topLeft.y),
+              bottomRight: CGPoint(x: topLeft.x, y: topRight.y))
     }
     
     public func corner(_ name: Name) -> CGPoint {

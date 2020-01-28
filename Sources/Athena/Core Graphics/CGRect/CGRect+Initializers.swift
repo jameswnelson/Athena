@@ -1,6 +1,5 @@
 
-import Foundation
-//import CoreGraphics
+import UIKit
 import AVFoundation.AVUtilities
 
 // MARK: - Various
@@ -14,7 +13,7 @@ public extension CGRect {
     /// - Parameters:
     ///   - ratio: <#ratio description#>
     ///   - rect: <#rect description#>
-    init(aspectRatio ratio: CGSize, inside rect: CGRect) {
+    init(aspectRatio ratio: CGSize, inside rect: Self) {
         self = AVMakeRect(aspectRatio: ratio, insideRect: rect)
     }
     
@@ -24,7 +23,7 @@ public extension CGRect {
     ///   - point: <#point description#>
     ///   - insets: <#insets description#>
     init(point: CGPoint, insets: UIEdgeInsets) {
-        self = CGRect.init(origin: point, size: .zero).insetted(insets)
+        self = Self.init(origin: point, size: .zero).insetted(insets)
     }
     
     /// Take a min point which will be the origin and a max point which will be subtracted by the min point to determine the rectabgle's size.
@@ -43,7 +42,7 @@ public extension CGRect {
     ///   - center: The center of the rectangle.
     ///   - size: The size of the rectangle.
     init(center: CGPoint, size: CGSize) {
-        self = CGRect.init(origin: center, size: .zero).outsetted(size/2)
+        self = Self.init(origin: center, size: .zero).outsetted(size/2)
     }
     
     /// Creates a CGRect where the min point will be the smallest x & y and the max point will be the largest x & y.
@@ -63,7 +62,7 @@ public extension CGRect {
             maxPoint.max(by: $0)
         }
         
-        self = CGRect.init(minPoint: minPoint, maxPoint: maxPoint)
+        self = .init(minPoint: minPoint, maxPoint: maxPoint)
     }
     
 }

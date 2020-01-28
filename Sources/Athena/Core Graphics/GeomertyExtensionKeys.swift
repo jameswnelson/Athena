@@ -1,13 +1,3 @@
-//
-//  GeomertyExtensions.swift
-//  Wall-E
-//
-//  Created by James Nelson on 2/1/16.
-//  Copyright © 2016 WHCC. All rights reserved.
-//
-
-import Foundation
-import CoreGraphics
 
 public struct GeomertyKeys {
     
