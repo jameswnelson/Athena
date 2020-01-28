@@ -5,7 +5,7 @@ import CoreGraphics
 public extension CGSize {
     
     var point : CGPoint {
-        return CGPoint.init(x: width, y: height)
+        CGPoint.init(x: width, y: height)
     }
     
     init(_ point: CGPoint) {

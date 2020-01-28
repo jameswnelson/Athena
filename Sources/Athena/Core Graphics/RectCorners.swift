@@ -19,15 +19,15 @@ public struct RectCorners {
     }
     
     public var array : [CGPoint] {
-        return [ topLeft, topRight, bottomLeft, bottomRight ]
+        [ topLeft, topRight, bottomLeft, bottomRight ]
     }
 
     public var flippedY : RectCorners {
     
-        return RectCorners(topLeft: CGPoint(x: topLeft.x, y: bottomLeft.y),
-                           topRight: CGPoint(x: topRight.x, y: bottomRight.y),
-                           bottomLeft: CGPoint(x: bottomLeft.x, y: topLeft.y),
-                           bottomRight: CGPoint(x: topLeft.x, y: topRight.y))
+        RectCorners(topLeft: CGPoint(x: topLeft.x, y: bottomLeft.y),
+                    topRight: CGPoint(x: topRight.x, y: bottomRight.y),
+                    bottomLeft: CGPoint(x: bottomLeft.x, y: topLeft.y),
+                    bottomRight: CGPoint(x: topLeft.x, y: topRight.y))
     }
     
     public func corner(_ name: Name) -> CGPoint {
@@ -54,27 +54,27 @@ public struct RectCorners {
 public extension CGRect {
     
     var topLeft: CGPoint {
-        return CGPoint(x: minX, y: minY)
+        CGPoint(x: minX, y: minY)
     }
     
     var topRight: CGPoint {
-        return CGPoint(x: maxX, y: minY)
+        CGPoint(x: maxX, y: minY)
     }
     
     var bottomLeft: CGPoint {
-        return CGPoint(x: minX, y: maxY)
+        CGPoint(x: minX, y: maxY)
     }
     
     var bottomRight: CGPoint {
-        return CGPoint(x: maxX, y: maxY)
+        CGPoint(x: maxX, y: maxY)
     }
     
     var corners : RectCorners {
-        return RectCorners(topLeft: topLeft, topRight: topRight, bottomLeft: bottomLeft, bottomRight: bottomRight)
+        RectCorners(topLeft: topLeft, topRight: topRight, bottomLeft: bottomLeft, bottomRight: bottomRight)
     }
     
     var flippedCorners : RectCorners {
-        return RectCorners(topLeft: bottomLeft, topRight: bottomRight, bottomLeft: topLeft, bottomRight: topRight)
+        RectCorners(topLeft: bottomLeft, topRight: bottomRight, bottomLeft: topLeft, bottomRight: topRight)
     }
     
     func corner(_ name: CornerName) -> CGPoint {

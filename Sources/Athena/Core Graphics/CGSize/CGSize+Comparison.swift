@@ -5,15 +5,15 @@ import CoreGraphics
 public extension CGSize {
     
     var area : CGFloat {
-        return width * height
+        width * height
     }
     
     var hypotenuse: CGFloat {
-        return sqrt(width**2 + height**2)
+        sqrt(width**2 + height**2)
     }
     
     var length: CGFloat {
-        return width + height
+        width + height
     }
     
     func contains(_ size: CGSize) -> Bool {
@@ -26,7 +26,7 @@ public extension CGSize {
 public extension CGSize {
     
     func isLarger(than size: CGSize) -> Bool {
-        return area > size.area
+        area > size.area
     }
     
 }

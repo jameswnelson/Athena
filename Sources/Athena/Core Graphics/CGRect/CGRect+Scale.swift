@@ -5,7 +5,7 @@ import CoreGraphics
 public extension CGRect {
     
     func scaled(scale s: CGFloat) -> CGRect {
-        return scaled(aroundPoint: center, sx: s, sy: s)
+        scaled(aroundPoint: center, sx: s, sy: s)
     }
     
     mutating func scale(scale s: CGFloat) {
@@ -13,7 +13,7 @@ public extension CGRect {
     }
     
     func scaled(scale s: CGPoint) -> CGRect {
-        return scaled(aroundPoint: center, sx: s.x, sy: s.y)
+        scaled(aroundPoint: center, sx: s.x, sy: s.y)
     }
     
     mutating func scale(scale s: CGPoint) {
@@ -21,7 +21,7 @@ public extension CGRect {
     }
     
     func scaled(aroundPoint point: CGPoint, scale s: CGPoint) -> CGRect {
-        return scaled(aroundPoint: point, sx: s.x, sy: s.y)
+        scaled(aroundPoint: point, sx: s.x, sy: s.y)
     }
     
     mutating func scale(aroundPoint point: CGPoint, scale s: CGPoint) {
@@ -59,7 +59,7 @@ public extension CGRect {
     
     /// Returns a scaled CGRect that maintains the aspect ratio of this CGRect's size within a bounding CGRect.
     func fitted(inside rect: CGRect) -> CGRect {
-        return CGRect(aspectRatio: size, inside: rect)
+        CGRect(aspectRatio: size, inside: rect)
     }
     
     mutating func fit(to aspectRatio: CGSize) {
@@ -67,7 +67,7 @@ public extension CGRect {
     }
     
     func fitted(to aspectRatio: CGSize) -> CGRect {
-        return CGRect(center: center, size: size.fitting(aspectRatio: aspectRatio))
+        CGRect(center: center, size: size.fitting(aspectRatio: aspectRatio))
     }
     
 }
@@ -81,7 +81,7 @@ public extension CGRect {
     }
     
     func filling(aspectRatio: CGSize) -> CGRect {
-        return CGRect(center: center, size: size.filling(aspectRatio: aspectRatio))
+        CGRect(center: center, size: size.filling(aspectRatio: aspectRatio))
     }
     
 }

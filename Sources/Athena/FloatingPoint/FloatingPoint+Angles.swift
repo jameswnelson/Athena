@@ -5,7 +5,7 @@ public extension BinaryFloatingPoint {
     
     /// <#Description#>
     var radians: Self {
-        return self * .pi / 180
+        self * .pi / 180
     }
     
     /// <#Description#>
@@ -15,7 +15,7 @@ public extension BinaryFloatingPoint {
     
     /// <#Description#>
     var degrees: Self {
-        return self * 180.0 / .pi
+        self * 180.0 / .pi
     }
     
     /// <#Description#>

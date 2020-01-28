@@ -5,7 +5,7 @@ import CoreGraphics
 public extension CGSize {
     
     var reciprocal : CGSize {
-        return CGSize(width: 1/width, height: 1/height)
+        CGSize(width: 1/width, height: 1/height)
     }
     
 }
@@ -15,15 +15,15 @@ public extension CGSize {
 public extension CGSize {
     
     static func + <T: BinaryInteger>(left: CGSize, value: T) -> CGSize {
-        return left + CGSize(all: value)
+        left + CGSize(all: value)
     }
     
     static func + <T: BinaryFloatingPoint>(left: CGSize, value: T) -> CGSize {
-        return left + CGSize(all: value)
+        left + CGSize(all: value)
     }
     
     static func + (left: CGSize, right: CGSize) -> CGSize {
-        return CGSize(width: left.width + right.width, height: left.height + right.height)
+        CGSize(width: left.width + right.width, height: left.height + right.height)
     }
     
     static func += <T: BinaryInteger>(left: inout CGSize, right: T) {
@@ -45,15 +45,15 @@ public extension CGSize {
 public extension CGSize {
     
     static func - <T: BinaryInteger>(left: CGSize, right: T) -> CGSize {
-        return left - CGSize(all: right)
+        left - CGSize(all: right)
     }
     
     static func - <T: BinaryFloatingPoint>(left: CGSize, right: T) -> CGSize {
-        return left - CGSize(all: right)
+        left - CGSize(all: right)
     }
     
     static func - (left: CGSize, right: CGSize) -> CGSize {
-        return CGSize(width: left.width - right.width, height: left.height - right.height)
+        CGSize(width: left.width - right.width, height: left.height - right.height)
     }
     
     static func -= <T: BinaryInteger>(left: inout CGSize, right: T) {
@@ -75,15 +75,15 @@ public extension CGSize {
 public extension CGSize {
     
     static func * <T: BinaryInteger>(left: CGSize, right: T) -> CGSize {
-        return left * CGSize(all: right)
+        left * CGSize(all: right)
     }
     
     static func * <T: BinaryFloatingPoint>(left: CGSize, right: T) -> CGSize {
-        return left * CGSize(all: right)
+        left * CGSize(all: right)
     }
     
     static func * (left: CGSize, right: CGSize) -> CGSize {
-        return CGSize(width: left.width * right.width, height: left.height * right.height)
+        CGSize(width: left.width * right.width, height: left.height * right.height)
     }
     
     static func *= <T: BinaryInteger>(left: inout CGSize, right: T) {
@@ -105,15 +105,15 @@ public extension CGSize {
 public extension CGSize {
     
     static func / <T: BinaryInteger>(size: CGSize, value: T) -> CGSize {
-        return size / CGSize(all: value)
+        size / CGSize(all: value)
     }
     
     static func / <T: BinaryFloatingPoint>(size: CGSize, value: T) -> CGSize {
-        return size / CGSize(all: value)
+        size / CGSize(all: value)
     }
     
     static func / (lhs: CGSize, rhs: CGSize) -> CGSize {
-        return CGSize(width: lhs.width / rhs.width, height: lhs.height / rhs.height)
+        CGSize(width: lhs.width / rhs.width, height: lhs.height / rhs.height)
     }
     
     static func /= <T: BinaryInteger>(size: inout CGSize, value: T) {
@@ -135,16 +135,16 @@ public extension CGSize {
 public extension CGSize {
     
     static func % <T: BinaryInteger>(left: CGSize, right: T) -> CGSize {
-        return left % CGSize(all: right)
+        left % CGSize(all: right)
     }
     
     static func % <T: BinaryFloatingPoint>(left: CGSize, right: T) -> CGSize {
-        return left % CGSize(all: right)
+        left % CGSize(all: right)
     }
     
     static func % (left: CGSize, right: CGSize) -> CGSize {
-        return CGSize(width: left.width.truncatingRemainder(dividingBy: right.width),
-                      height: left.height.truncatingRemainder(dividingBy: right.height))
+        CGSize(width: left.width.truncatingRemainder(dividingBy: right.width),
+               height: left.height.truncatingRemainder(dividingBy: right.height))
     }
     
     static func %= <T: BinaryInteger>(left: inout CGSize, right: T) {
@@ -168,11 +168,11 @@ infix operator **=: MultiplicationPrecedence
 public extension CGSize {
     
     static func ** <T: BinaryInteger>(size: CGSize, power: T) -> CGSize {
-        return size ** CGFloat(power)
+        size ** CGFloat(power)
     }
     
     static func ** <T: BinaryFloatingPoint>(size: CGSize, power: T) -> CGSize {
-        return CGSize(width: size.width ** CGFloat(power), height: size.height ** CGFloat(power))
+        CGSize(width: size.width ** CGFloat(power), height: size.height ** CGFloat(power))
     }
     
     static func **= <T: BinaryInteger>(size: inout CGSize, power: T) {

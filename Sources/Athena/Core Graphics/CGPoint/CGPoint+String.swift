@@ -9,11 +9,11 @@ public extension CGPoint {
     // MARK: String
     
     func string(withFormat format: String) -> String {
-        return String.init(format: format, x, y)
+        String.init(format: format, x, y)
     }
     
     func string(formatPrecision format: String) -> String {
-        return string(withFormat: format+GeomertyKeys.MultiplicationSymbol+format)
+        string(withFormat: format+GeomertyKeys.MultiplicationSymbol+format)
     }
 
 }
